@@ -17,7 +17,6 @@ def write_matrix(filename, matrix, i, j):
         else:
             f.write(str(matrix3[i][j]) + " ")
 
-
 def read_matrix(filename):
     with open(filename, "r") as f:
         return [[int(i) for i in line.split(" ")] for line in f]
